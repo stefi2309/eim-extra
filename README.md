@@ -32,7 +32,7 @@ Pentru optiunile de comenzi, rulati:
    `python mdns_cli.py --type _chatservice._tcp --resolve --seconds 5`
 
 Note importante:
-- Scriptul foloseste UDP port 5353 (mDNS)
+- Scriptul foloseste UDP port 5353 (mDNS), acest lucru este gestionat intern de biblioteca zeroconf, fara a fi vizibil explicit in cod
 - Pe Windows trebuie permisa comunicarea Python in firewall
 - Apasa Enter pentru oprire manuala sau foloseste --seconds pentru oprire automata
 
