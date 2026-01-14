@@ -36,6 +36,7 @@ Note importante:
 - Pe Windows trebuie permisa comunicarea Python in firewall
 - Apasa Enter pentru oprire manuala sau foloseste --seconds pentru oprire automata
 
+## In plus:
 Scripturile `publish_test_service` si `browse_chatservice`:
   Pentru a testa in afara wifi-ului de la facultate, ar fi indicat sa se foloseasca intr-un terminal separat scriptul de publisher care anunta explicit serviciul chatservice in retea.
   In plus, script-ul browse_chatservice realizeaza doar descoperirea serviciilor de tip _chatservice._tcp anuntate in reteaua locala, afisand evenimentele de aparitie, modificare si disparitie ale acestora. Este practic o varianta simpla si rapida pentru testare.
