@@ -1,8 +1,13 @@
 """
-  python mdns_cli.py --all-types
-  python mdns_cli.py --type _chatservice._tcp
-  python mdns_cli.py --type _http._tcp --resolve
-  python mdns_cli.py --all-types --follow-types --resolve
+python mdns_cli.py --help 
+  options:
+  -h, --help           show this help message and exit
+  --all-types          List service types (like avahi-browse -a)
+  --type SERVICE_TYPE  Browse a specific service type, e.g. _http._tcp or _chatservice._tcp
+  --follow-types       When using --all-types, also browse instances of each discovered type
+  --resolve            Resolve instances to IP/port/TXT (like avahi-browse -r)
+  --verbose            Print update events too
+  --seconds SECONDS    Run for N seconds then exit (0 = wait for Enter)
 
 """
 
@@ -185,3 +190,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
